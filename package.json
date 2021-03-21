@@ -27,7 +27,7 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/dracula/visual-studio-code.git"
+		"url": "https://github.com/luizomf/omtheme"
 	},
 	"engines": {
 		"vscode": "^1.13.0"
@@ -52,14 +52,9 @@
 	"contributes": {
 		"themes": [
 			{
-				"label": "Dracula",
+				"label": "OM Theme (Dark)",
 				"uiTheme": "vs-dark",
-				"path": "./theme/dracula.json"
-			},
-			{
-				"label": "Dracula Soft",
-				"uiTheme": "vs-dark",
-				"path": "./theme/dracula-soft.json"
+				"path": "./theme/omtheme.json"
 			}
 		]
 	},
