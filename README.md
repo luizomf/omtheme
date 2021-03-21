@@ -1,3 +1,9 @@
+# Om Theme (A Darker Dracula Theme)
+
+This is a reeeeeaaalllyyy simple change I made to the original Dracula Theme to make it darker.
+
+Please, checkout the original README bellow.
+
 # Dracula for [Visual Studio Code](http://code.visualstudio.com)
 
 > A dark theme for [Visual Studio Code](http://code.visualstudio.com).
