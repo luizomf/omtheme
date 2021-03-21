@@ -2,7 +2,7 @@
 
 This is a reeeeeaaalllyyy simple change I made to the original Dracula Theme to make it darker.
 
-Please, checkout the original README bellow.
+Please, checkout the [original README bellow](https://github.com/dracula/visual-studio/tree/c5bfa9b4d0c80b92535d35c673685d41f1d25494).
 
 # Dracula for [Visual Studio Code](http://code.visualstudio.com)
 
