@@ -1,0 +1,72 @@
+{
+	"name": "omthemes",
+	"version": "1.0.1",
+	"displayName": "Om Theme (A Darker Dracula Theme)",
+	"homepage": "https://draculatheme.com/",
+	"description": "This theme is based on Official Dracula Theme. Just a little darker.",
+	"publisher": "omthemes",
+	"license": "MIT",
+	"scripts": {
+		"build": "node ./scripts/build.js",
+		"lint": "node ./scripts/lint.js",
+		"package": "vsce package -o ./bin/omtheme.vsix",
+		"vscode:prepublish": "npm run build",
+		"vsce-publish": "vsce publish"
+	},
+	"maintainers": [
+		"Otávio Miranda <luizomf@gmail.com>"
+	],
+	"contributors": [
+		"Krzysztof Wisznarewski",
+		"Daniel Ramos",
+		"Eric Jackson",
+		"Elliott Pogue",
+		"Ajit Singh",
+		"Teddy Bradford",
+		"Otávio Miranda"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/dracula/visual-studio-code.git"
+	},
+	"engines": {
+		"vscode": "^1.13.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"dracula",
+		"dark",
+		"theme",
+		"color-theme",
+		"darker dracula",
+		"om theme",
+		"Otávio Miranda"
+	],
+	"icon": "icon.png",
+	"galleryBanner": {
+		"color": "#3c4557",
+		"theme": "dark"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Dracula",
+				"uiTheme": "vs-dark",
+				"path": "./theme/dracula.json"
+			},
+			{
+				"label": "Dracula Soft",
+				"uiTheme": "vs-dark",
+				"path": "./theme/dracula-soft.json"
+			}
+		]
+	},
+	"devDependencies": {
+		"js-yaml": "^3.14.0",
+		"prettier": "^2.2.1",
+		"tinycolor2": "^1.4.2",
+		"vsce": "^1.85.0"
+	}
+}
