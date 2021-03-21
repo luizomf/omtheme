@@ -4,6 +4,8 @@ This is a reeeeeaaalllyyy simple change I made to the original Dracula Theme to 
 
 Please, checkout the [original README bellow](https://github.com/dracula/visual-studio/tree/c5bfa9b4d0c80b92535d35c673685d41f1d25494).
 
+If you want to install it: [Om Theme](https://marketplace.visualstudio.com/items?itemName=omthemes.omthemes)
+
 # Dracula for [Visual Studio Code](http://code.visualstudio.com)
 
 > A dark theme for [Visual Studio Code](http://code.visualstudio.com).
