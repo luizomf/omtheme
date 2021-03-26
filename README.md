@@ -14,7 +14,9 @@ If you want to install it: [Om Theme](https://marketplace.visualstudio.com/items
 
 ## Install
 
-All instructions can be found at [draculatheme.com/visual-studio-code](https://draculatheme.com/visual-studio-code).
+Press "`CTRL + P`" on your keyboard<br />
+Copy and paste `ext install omthemes.omthemes`<br />
+Press the "`Enter`" key.<br />
 
 ## Team
 
