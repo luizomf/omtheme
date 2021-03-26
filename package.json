@@ -1,9 +1,9 @@
 {
 	"name": "omthemes",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"displayName": "Om Theme (A Darker Dracula Theme)",
 	"homepage": "https://draculatheme.com/",
-	"description": "This theme is based on Official Dracula Theme. Just a little darker.",
+	"description": "This theme is totally based on Official Dracula Theme (identical). Just a little darker.",
 	"publisher": "omthemes",
 	"license": "MIT",
 	"scripts": {
@@ -42,11 +42,12 @@
 		"color-theme",
 		"darker dracula",
 		"om theme",
+		"omtheme",
 		"Otávio Miranda"
 	],
 	"icon": "icon.png",
 	"galleryBanner": {
-		"color": "#3c4557",
+		"color": "#171724",
 		"theme": "dark"
 	},
 	"contributes": {

@@ -2,11 +2,11 @@
 
 This is a reeeeeaaalllyyy simple change I made to the original Dracula Theme to make it darker.
 
-Please, checkout the [original README bellow](https://github.com/dracula/visual-studio/tree/c5bfa9b4d0c80b92535d35c673685d41f1d25494).
+Please, checkout the [original README](https://github.com/dracula/visual-studio/tree/c5bfa9b4d0c80b92535d35c673685d41f1d25494) for [Dracula Oficial](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula).
 
 If you want to install it: [Om Theme](https://marketplace.visualstudio.com/items?itemName=omthemes.omthemes)
 
-# Dracula for [Visual Studio Code](http://code.visualstudio.com)
+# Om Theme for [Visual Studio Code](http://code.visualstudio.com)
 
 > A dark theme for [Visual Studio Code](http://code.visualstudio.com).
 
@@ -18,16 +18,8 @@ All instructions can be found at [draculatheme.com/visual-studio-code](https://d
 
 ## Team
 
-This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/visual-studio-code/graphs/contributors).
+This theme is maintained by:
 
-[![Derek S.](https://avatars3.githubusercontent.com/u/5240018?v=3&s=70)](https://github.com/dsifford) |
+[![Otávio Miranda](https://avatars.githubusercontent.com/u/553862?v=4&s=100)](https://github.com/luizomf) |
 :---: |
-[Derek S.](https://github.com/dsifford) |
-
-## Contributing
-
-If you'd like to contribute to this theme, please read the [contributing guidelines](./.github/CONTRIBUTING.md).
-
-## License
-
-[MIT License](./LICENSE)
+[Otávio Miranda](https://github.com/luizomf) |
