@@ -9,12 +9,16 @@ if (!fs.existsSync(THEME_DIR)) {
 }
 
 module.exports = async () => {
-    const { base, soft } = await generate();
+    const { base, nightOwlItalic } = await generate();
 
     return Promise.all([
         fs.promises.writeFile(
             path.join(THEME_DIR, 'omtheme.json'),
             JSON.stringify(base, null, 4)
+        ),
+        fs.promises.writeFile(
+            path.join(THEME_DIR, 'omtheme-nightOwlItalic.json'),
+            JSON.stringify(nightOwlItalic, null, 4)
         )
     ]);
 };

@@ -70,8 +70,16 @@ module.exports = async () => {
         }
     }
 
+    const nightOwlItalic = {...base};
+
+    const newBase = { ...base, tokenColors: base.tokenColors.filter(obj => {
+        return !obj?.name?.startsWith('OM_SETTING');
+    }) };
+
     return {
-        base,
-        soft: transformSoft(base),
+        base: newBase,
+        nightOwlItalic
     };
 };
+
+// module.exports();

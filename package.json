@@ -1,6 +1,6 @@
 {
 	"name": "omthemes",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"displayName": "Om Theme (A Darker Dracula Theme)",
 	"homepage": "https://draculatheme.com/",
 	"description": "This theme is totally based on Official Dracula Theme (identical). Just a little darker.",
@@ -11,7 +11,8 @@
 		"lint": "node ./scripts/lint.js",
 		"package": "vsce package -o ./bin/omtheme.vsix",
 		"vscode:prepublish": "npm run build",
-		"vsce-publish": "vsce publish"
+		"vsce-publish": "vsce publish",
+		"updateTheme": "npm run vscode:prepublish && npm run package"
 	},
 	"maintainers": [
 		"Otávio Miranda <luizomf@gmail.com>"
@@ -53,9 +54,14 @@
 	"contributes": {
 		"themes": [
 			{
-				"label": "OM Theme (Dark)",
+				"label": "OM Theme (Default Dracula Italics)",
 				"uiTheme": "vs-dark",
 				"path": "./theme/omtheme.json"
+			},
+			{
+				"label": "OM Theme (Night Owl Italics)",
+				"uiTheme": "vs-dark",
+				"path": "./theme/omtheme-nightOwlItalic.json"
 			}
 		]
 	},
@@ -63,6 +69,6 @@
 		"js-yaml": "^3.14.0",
 		"prettier": "^2.2.1",
 		"tinycolor2": "^1.4.2",
-		"vsce": "^1.85.0"
+		"vsce": "^1.87.1"
 	}
 }
