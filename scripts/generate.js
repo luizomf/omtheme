@@ -1,6 +1,7 @@
 const { readFile } = require('fs').promises;
 const { join } = require('path');
 const { Type, Schema, load } = require('js-yaml');
+const _ = require('lodash');
 const tinycolor = require('tinycolor2');
 
 /**
@@ -70,18 +71,19 @@ module.exports = async () => {
         }
     }
 
-    const nightOwlItalic = { ...base };
+    const nightOwlItalic = _.cloneDeep(base);
     const noItalic = {
-        ...base, tokenColors: base.tokenColors.filter(obj => {
-            if (obj?.settings?.fontStyle) {
-                obj.settings.fontStyle = obj.settings.fontStyle.replace('italic', '');
+        ..._.cloneDeep(base), tokenColors: base.tokenColors.filter(obj => {
+            const newObj = { ...obj };
+            if (newObj?.settings?.fontStyle) {
+                newObj.settings.fontStyle = newObj.settings.fontStyle.replace('italic', '');
             }
-            return obj;
+            return newObj;
         })
     };
 
     const newBase = {
-        ...base, tokenColors: base.tokenColors.filter(obj => {
+        ..._.cloneDeep(base), tokenColors: base.tokenColors.filter(obj => {
             return !obj?.name?.startsWith('OM_SETTING');
         })
     };

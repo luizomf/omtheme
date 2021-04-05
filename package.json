@@ -1,6 +1,6 @@
 {
 	"name": "omthemes",
-	"version": "1.0.7",
+	"version": "1.0.8",
 	"displayName": "Om Theme (A Darker Dracula Theme)",
 	"homepage": "https://draculatheme.com/",
 	"description": "This theme is based on Official Dracula Theme, Just a little darker (with and without italic).",
@@ -76,5 +76,8 @@
 		"prettier": "^2.2.1",
 		"tinycolor2": "^1.4.2",
 		"vsce": "^1.87.1"
+	},
+	"dependencies": {
+		"lodash": "^4.17.21"
 	}
 }
