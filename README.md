@@ -26,6 +26,10 @@ Choose between two different italic styles: Dracula Official or Night Owl. You c
 
 ![Screenshot](https://raw.githubusercontent.com/luizomf/omtheme/master/screenshot-no-italic.png)
 
+<strong>Select your style</strong>
+
+![Screenshot](https://raw.githubusercontent.com/luizomf/omtheme/master/select-options.gif)
+
 ## Install
 
 Press "`CTRL + P`" on your keyboard<br />
