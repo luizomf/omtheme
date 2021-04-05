@@ -71,9 +71,13 @@ module.exports = async () => {
         }
     }
 
-    const nightOwlItalic = _.cloneDeep(base);
+    const baseClone1 = _.cloneDeep(base);
+    const baseClone2 = _.cloneDeep(base);
+    const baseClone3 = _.cloneDeep(base);
+
+    const nightOwlItalic = _.cloneDeep(baseClone1);
     const noItalic = {
-        ..._.cloneDeep(base), tokenColors: base.tokenColors.filter(obj => {
+        ...baseClone2, tokenColors: baseClone2.tokenColors.filter(obj => {
             const newObj = { ...obj };
             if (newObj?.settings?.fontStyle) {
                 newObj.settings.fontStyle = newObj.settings.fontStyle.replace('italic', '');
@@ -83,7 +87,7 @@ module.exports = async () => {
     };
 
     const newBase = {
-        ..._.cloneDeep(base), tokenColors: base.tokenColors.filter(obj => {
+        ...baseClone3, tokenColors: baseClone3.tokenColors.filter(obj => {
             return !obj?.name?.startsWith('OM_SETTING');
         })
     };
