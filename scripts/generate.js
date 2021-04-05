@@ -63,23 +63,34 @@ module.exports = async () => {
     /** @type {Theme} */
     const base = load(yamlFile, { schema });
 
-    // Remove nulls and other falsey values from colors
+    // Remove nulls and other falsy values from colors
     for (const key of Object.keys(base.colors)) {
         if (!base.colors[key]) {
             delete base.colors[key];
         }
     }
 
-    const nightOwlItalic = {...base};
+    const nightOwlItalic = { ...base };
+    const noItalic = {
+        ...base, tokenColors: base.tokenColors.filter(obj => {
+            if (obj?.settings?.fontStyle) {
+                obj.settings.fontStyle = obj.settings.fontStyle.replace('italic', '');
+            }
+            return obj;
+        })
+    };
 
-    const newBase = { ...base, tokenColors: base.tokenColors.filter(obj => {
-        return !obj?.name?.startsWith('OM_SETTING');
-    }) };
+    const newBase = {
+        ...base, tokenColors: base.tokenColors.filter(obj => {
+            return !obj?.name?.startsWith('OM_SETTING');
+        })
+    };
 
     return {
         base: newBase,
-        nightOwlItalic
+        nightOwlItalic,
+        noItalic
     };
 };
 
-// module.exports();
+module.exports();

@@ -1,9 +1,9 @@
 {
 	"name": "omthemes",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"displayName": "Om Theme (A Darker Dracula Theme)",
 	"homepage": "https://draculatheme.com/",
-	"description": "This theme is totally based on Official Dracula Theme (identical). Just a little darker.",
+	"description": "This theme is based on Official Dracula Theme, Just a little darker (with and without italic).",
 	"publisher": "omthemes",
 	"license": "MIT",
 	"scripts": {
@@ -44,7 +44,8 @@
 		"darker dracula",
 		"om theme",
 		"omtheme",
-		"Otávio Miranda"
+		"Otávio Miranda",
+		"Italic"
 	],
 	"icon": "icon.png",
 	"galleryBanner": {
@@ -54,14 +55,19 @@
 	"contributes": {
 		"themes": [
 			{
-				"label": "OM Theme (Default Dracula Italics)",
+				"label": "OM Theme (Default Dracula Italic)",
 				"uiTheme": "vs-dark",
 				"path": "./theme/omtheme.json"
 			},
 			{
-				"label": "OM Theme (Night Owl Italics)",
+				"label": "OM Theme (Night Owl Italic)",
 				"uiTheme": "vs-dark",
 				"path": "./theme/omtheme-nightOwlItalic.json"
+			},
+			{
+				"label": "OM Theme (No Italic)",
+				"uiTheme": "vs-dark",
+				"path": "./theme/omtheme-noItalic.json"
 			}
 		]
 	},
