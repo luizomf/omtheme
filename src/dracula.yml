@@ -45,7 +45,7 @@ dracula:
     - &WHITE "#FFFFFF"
     - &TAB_DROP_BG "#44475A70"
     # UI Variants
-    - &BGLighter "#1b1c27"
+    - &BGLighter "#282A36"
     - &BGLight "#171823"
     - &BGDark "#13141f"
     - &BGDarker "#121219"
@@ -195,7 +195,7 @@ colors:
   editor.hoverHighlightBackground: !alpha [*CYAN, 50] # Highlight below the word for which a hover is shown
 
   editor.lineHighlightBackground: # Background color for the highlight of line at the cursor position
-  editor.lineHighlightBorder: *SELECTION # Background color for the border around the line at the cursor position
+  editor.lineHighlightBorder: *LineHighlight # Background color for the border around the line at the cursor position
 
   editorLink.activeForeground: *CYAN # Color of active links
   editor.rangeHighlightBackground: !alpha [*PURPLE, 15] # Background color of highlighted ranges, like by Quick Open and Find features
