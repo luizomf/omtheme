@@ -327,17 +327,17 @@ colors:
   titleBar.inactiveForeground: *COMMENT # Title Bar foreground when the window is inactive
 
   # Notification Dialog Colors
-  notification.background: *BG # Notifications background color
-  notification.foreground: *FG # Notifications foreground color
-  notification.buttonBackground: *SELECTION
-  notification.buttonForeground: *FG
-  notification.buttonHoverBackground: *LineHighlight
-  notification.errorBackground: *RED
-  notification.errorForeground: *FG
-  notification.infoBackground: *CYAN
-  notification.infoForeground: *BG
-  notification.warningBackground: *ORANGE
-  notification.warningForeground: *BG
+  # notification.background: *BG # Notifications background color
+  # notification.foreground: *FG # Notifications foreground color
+  # notification.buttonBackground: *SELECTION
+  # notification.buttonForeground: *FG
+  # notification.buttonHoverBackground: *LineHighlight
+  # notification.errorBackground: *RED
+  # notification.errorForeground: *FG
+  # notification.infoBackground: *CYAN
+  # notification.infoForeground: *BG
+  # notification.warningBackground: *ORANGE
+  # notification.warningForeground: *BG
 
   # Extensions
   extensionButton.prominentForeground: *FG # Extension view button foreground color (for example Install button)
@@ -358,7 +358,7 @@ colors:
 
   # Setting Editor
   settings.headerForeground: *FG # The foreground color for a section header or active title
-  settings.modifiedItemForeground: *ORANGE # The foreground color for a the modified setting indicator
+  # settings.modifiedItemForeground: *ORANGE # The foreground color for a the modified setting indicator
   settings.modifiedItemIndicator: *ORANGE # The color of the line that indicates a modified setting
   settings.inactiveSelectedItemBorder: # The color of the selected setting row border, when the settings list does not have focus
   settings.dropdownBackground: *BGDark # Dropdown background
@@ -569,7 +569,7 @@ tokenColors:
       - entity.name.class
     settings:
       foreground: *CYAN
-      fontStyle: normal
+      fontStyle: ""
 
   - name: this, super, self, etc.
     scope:
@@ -758,7 +758,7 @@ tokenColors:
       - support.variable
       - variable.other.predefined
     settings:
-      fontStyle: regular
+      fontStyle: ""
       foreground: *PURPLE
 
   - name: Built-in functions / properties
@@ -766,7 +766,7 @@ tokenColors:
       - support.function
       - support.type.property-name
     settings:
-      fontStyle: regular
+      fontStyle: ""
 
   # =============================================================================
   # Punctuation
@@ -876,7 +876,7 @@ tokenColors:
       - meta.interface-or-protocol storage.type.objc
       - source.groovy storage.type.def
     settings:
-      fontStyle: regular
+      fontStyle: ""
       foreground: *PINK
 
   - name: Types
@@ -1035,7 +1035,7 @@ tokenColors:
       - meta.export variable.other.readwrite.alias # Module import aliasing (alias name)
       - meta.variable.assignment.destructured.object.coffee variable variable # Object destructuring variable (coffeescript)
     settings:
-      fontStyle: normal
+      fontStyle: ""
       foreground: *FG
 
   # =============================================================================
@@ -1095,7 +1095,7 @@ tokenColors:
     scope:
       - support.constant
     settings:
-      fontStyle: normal
+      fontStyle: ""
       foreground: *PURPLE
 
   - name: Makefile prerequisite names
@@ -1104,7 +1104,7 @@ tokenColors:
     settings:
       foreground: *YELLOW
 
-  - name: SCSS attibute selector strings
+  - name: SCSS attribute selector strings
     scope:
       - meta.attribute-selector.scss
     settings:
@@ -1319,4 +1319,3 @@ tokenColors:
       - keyword.control
     settings:
       fontStyle: italic
-

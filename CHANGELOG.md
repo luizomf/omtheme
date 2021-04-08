@@ -17,3 +17,12 @@
 
 ---
 
+## 1.0.14
+
+### Patch
+
+- Minor changes on dev environment
+- Removed some invalid options from theme
+
+---
+

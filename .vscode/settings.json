@@ -1,6 +1,19 @@
 {
     "files.trimTrailingWhitespace": true,
     "[yaml]": {
-        "editor.renderWhitespace": "boundary",
-    }
+        "editor.renderWhitespace": "boundary"
+    },
+    "yaml.customTags": [
+        "!Equals sequence",
+        "!FindInMap sequence",
+        "!GetAtt",
+        "!GetAZs",
+        "!ImportValue",
+        "!Join sequence",
+        "!Ref",
+        "!Select sequence",
+        "!Split sequence",
+        "!Sub",
+        "!alpha sequence"
+    ],
 }

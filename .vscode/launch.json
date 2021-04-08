@@ -13,8 +13,12 @@
             "preLaunchTask": "npm: build",
             "args": [
                 "--extensionDevelopmentPath=${workspaceFolder}",
-                "--disable-extensions",
-                "${file}"
+                "--disable-extensions=1",
+                "${workspaceFolder}/files/example/demo/html.html",
+                "${workspaceFolder}/files/example/demo/css.css",
+                "${workspaceFolder}/files/example/demo/tsx.tsx",
+                "${workspaceFolder}/files/example/demo/js.js",
+                "${workspaceFolder}/files/example/demo/python.py",
             ]
         },
         {

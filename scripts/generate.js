@@ -75,7 +75,7 @@ module.exports = async () => {
     const baseClone2 = _.cloneDeep(base);
     const baseClone3 = _.cloneDeep(base);
 
-    const nightOwlItalic = _.cloneDeep(baseClone1);
+    const nightOwlItalic = baseClone3;
     const noItalic = {
         ...baseClone2, tokenColors: baseClone2.tokenColors.filter(obj => {
             const newObj = { ...obj };
