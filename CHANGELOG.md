@@ -26,3 +26,11 @@
 
 ---
 
+## 1.0.14
+
+### Patch
+
+- Fix sidebar colors
+
+---
+

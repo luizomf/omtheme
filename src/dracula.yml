@@ -46,7 +46,7 @@ dracula:
     - &TAB_DROP_BG "#44475A70"
     # UI Variants
     - &BGLighter "#282A36"
-    - &BGLight "#171823"
+    - &BGLight "#151724"
     - &BGDark "#13141f"
     - &BGDarker "#121219"
 
@@ -137,7 +137,7 @@ colors:
   list.focusForeground: # List/Tree foreground color for the focused item when the list/tree is active. An active list/tree has keyboard focus, an inactive does not
 
   # Activity Bar
-  activityBar.background: *BGLight # Activity Bar background color
+  activityBar.background: *BGDark # Activity Bar background color
   activityBar.inactiveForeground: *COMMENT # Activity bar item foreground color when it is inactive
   activityBar.dropBackground: # Drag and drop feedback color for the Activity Bar items
   activityBar.foreground: *FG # Activity bar foreground color (for example used for the icons)
@@ -148,13 +148,13 @@ colors:
   activityBarBadge.foreground: *FG # Activity notification badge foreground color
 
   # Side Bar
-  sideBar.background: *BGDark # Side Bar background color
-  sideBar.foreground: # Side Bar foreground color. The Side Bar is the container for views like Explorer and Search
+  sideBar.background: *BGLight # Side Bar background color
+  sideBar.foreground: *FG # Side Bar foreground color. The Side Bar is the container for views like Explorer and Search
   sideBar.border: # Side Bar border color on the side separating the editor
   sideBarTitle.foreground: *FG # Side Bar title foreground color
   sideBarSectionHeader.background: *BG # Side Bar section header background color
   sideBarSectionHeader.foreground: # Side Bar section header foreground color
-  sideBarSectionHeader.border: *BGDarker # Side bar section header border color
+  sideBarSectionHeader.border: *BGDark # Side bar section header border color
 
   # Editor Group & Tabs
   editorGroup.background: # Background color of an editor group. The background color shows up when dragging editor groups around
@@ -166,10 +166,10 @@ colors:
   tab.activeBackground: *BG # Active Tab background color
   tab.activeForeground: *FG # Active Tab foreground color in an active group
   tab.border: *BGDarker # Border to separate Tabs from each other
-  tab.activeBorderTop: !alpha [*PINK, 80] # A border drawn to the top of the active tab
+  tab.activeBorderTop: *PINK # A border drawn to the top of the active tab
   tab.activeBorder: # A border drawn to the bottom of the active tab
   tab.unfocusedActiveBorder: # A border drawn to the bottom of the active tab in an editor group that is not focused
-  tab.inactiveBackground: *BGDark # Inactive Tab background color
+  tab.inactiveBackground: *BGLight # Inactive Tab background color
   tab.inactiveForeground: *COMMENT # Inactive Tab foreground color in an active group
   tab.unfocusedActiveForeground: # Active tab foreground color in an inactive editor group
   tab.unfocusedInactiveForeground: # Inactive tab foreground color in an inactive editor group
