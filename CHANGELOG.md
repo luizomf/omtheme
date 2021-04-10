@@ -34,3 +34,11 @@
 
 ---
 
+## 1.0.17
+
+### Patch
+
+- Fix fold background
+
+---
+
